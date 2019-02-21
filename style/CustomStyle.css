@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.person-name {
+	margin: 0;
+	padding: 0.1em 0;
+	font-size: 4em;
+	color: #00c816;
+	font-weight: 900;
+}
+
+.navigation-menu ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.navigation-menu li{
+	display: inline-block;
+	margin: 1em;
+}
+
+.navigation-menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px;
+	transition: all 0.1s ease-in-out 0s;
+}
+
+.navigation-menu a:hover {
+	border-bottom: 3px solid #00c816;
+	border-radius: 5px;
+}
+
+.intro-section {
+	background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('../images/pexels-photo-840996.jpeg');  /* CSS3 short hand property. */
+	background-repeat: no-repeat; 
+	background-position: center center; /* or only center */
+	background-size: cover;
+	color: #fff;
+	padding: 10em 0;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.intro-content-container h1 {
+	margin-top: 0em;
+	font-size: 2.5em;
+	font-weight: 900;
+}
+
+.intro-content-container span {
+	display: block;
+	font-size: 15px;
+	font-weight: 400;
+	padding-top: 0.5em;
+}
+
+.header {
+	position: absolute;
+	left: 0px;
+	right: 0px;  		/* Header aligned to be in center */
+	clear: both;
+	margin: 1.2em 0;
+	overflow: auto;
+}
+
+.intro-content-container {
+	margin: 5.2em 0;
+	padding-top: 2.5em;
+}
+
+.intro-button {
+	padding: 0.5em 2em;
+	border: 2px solid #06cc1c;
+    background-color: #00c816;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.2s linear 0s;   /* CSS3 short hand property */
+}
+
+.intro-button:hover {
+	border: 2px solid #00c816;
+	background-color: #fff;
+	color: #111;
+}
+
+.about-section {
+	padding: 2em 1em;
+	background-color: rgba(220, 220, 220, 0.66);
+}
+
+.about-section h1 {
+	margin: 0px;
+	font-size: 35px;
+	font-weight: 900;
+}
+
+.about-section h4 {
+	margin-top: 0px;
+	font-weight: 700;
+	color: #00c816;
+}
+
+.about-main-container {
+	width: 100%;
+	padding: 1em 0;
+	color: #111;
+	overflow: auto;
+}
+
+.about-main-container:after {
+	content: '.';
+	visibility: hidden;
+	display: block;
+	overflow: hidden;   /* Upcoming element always comes according to normal flow.*/
+	clear: both;
+	height: 0px;
+}
+
+.left-container img {
+	width: 65%;
+}
+
+.left-container {
+	width: 30%;
+	float: left;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+
+.right-container {
+	text-align: justify;
+	width: 70%;
+	display: block;
+	overflow: auto;
+}
+
+.right-container p {
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+.social-navigation-link ul {
+	list-style: none;
+	margin: 0px;
+	margin-top: 1em;
+	padding: 0px;
+}
+
+.social-navigation-link li {
+	display: inline-block;
+}
+
+.social-navigation-link a {
+	width: 45px;
+	height: 45px;
+	border: 1px solid #444444;
+	border-radius: 50%;
+	line-height: 45px;
+	display: block;
+	color: #2b2929;
+	transition: all 0.2s ease-in;
+}
+
+.social-navigation-link a:hover {
+	color: #00c816;
+	border: 1px solid #00c816;
+}
+
+.work-section {
+	background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(4, 174, 23, 0.7490196078431373)), url('../images/pexels-photo-270360.jpeg'); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	padding: 2em 1em;
+	overflow: auto;
+}
+
+.work-experience-main-container h1 {
+	color: #fff;
+	font-size: 35px;
+	margin: 0px;
+}
+
+.work-experience-main-container {
+	color: #ffffff;
+}
+
+.work-experience-main-container hr, .footer-content-container hr {
+	display: block;
+	width: 10%;	
+	height: 4px;
+	background: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 1.8em;
+}
+
+
+.left-container h2, .left-container h3, .left-container p {
+	margin: 0;
+	margin-bottom: 0.1em;
+}
+
+.contact-section {
+	background-color: rgba(220, 220, 220, 0.66); /* Not supported in all Browser. */
+	padding: 3em 1em;
+	color: #111;
+}
+
+.contact-content-container h1{
+	margin:0;
+	font-size: 35px;
+}
+
+.contact-content-container p {
+	text-align: justify;
+	padding-bottom: 0.5em;
+}
+
+footer{
+	background-color: #111;  /* Don't take completely dark. */
+	color: #fff;
+	padding: 3em 0;
+	overflow: auto;
+}
+
+.footer-content-container h5 {
+	margin: 0px;
+	font-size: 1em;
+}
+
+/* Mobile responsive using media query */
+
+@media only screen and (max-width: 640px) {
+	.person-name {
+		font-size: 2.5em;
+	}
+	
+	.header {
+		margin: 0.5em 0;
+	}
+	
+	.navigation-menu li{
+		margin: 0.5em;
+		overflow: hidden;
+	}
+	
+	.navigation-menu a {
+		padding: 0.2em;
+		font-size: 0.6em;
+	}
+	.intro-content-container h1 {
+		font-size: 1.3em;
+		margin-top: 1em;
+	}
+	
+	.intro-content-container span {
+		font-size: 0.4em;
+		padding-top: 8px;
+		font-weight: bold;
+	}
+
+	.intro-content-container {
+		margin: 1em 0;
+		padding: 0;
+	}
+
+	.intro-section {
+		padding: 8em 0;
+		overflow: hidden;
+	}
+	
+	.intro-button {
+		padding: 8px 16px;
+		font-size: 10px;
+	}
+
+	.about-section h1,.contact-content-container h1 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.about-section h4 {
+		font-size: 12.5px;
+	}
+	
+	.left-container, .right-container, .left-container img {
+		width: 100%;
+	}
+	
+	.left-container {
+		margin-bottom: 0.8em;
+	}
+	
+	.work-experience-main-container h1 {
+		font-size: 25px;
+	}
+
+	.work-experience-main-container hr, .footer-content-container hr {
+		width: 20%;	
+	}
+
+	.left-container h2, .left-container h3, .left-container p, .footer-content-container h5 {
+		font-size: 100%;
+	}
+	
+	footer {
+		padding: 3em 0.8em;
+	}
+}
+
+
+/* To provide horizontal scroll bar, When resolution reach at 320px(I think there is available device in the market). Or any person try to resize till this point. */
+
+@media only screen and (max-width: 320px) {
+	header, .intro-section, .about-section, .work-section, .contact-section, footer {
+		width: 320px;
+		height: auto;
+		overflow: hidden;
+	}
+}
